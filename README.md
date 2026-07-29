@@ -4,25 +4,23 @@ A console-based CRUD application built in Python to manage student records, with
 
 # Features
 
-**Create** — add new student records with validation (no empty names, no duplicate IDs, positive age)
-**Read** — view all students (sorted by ID) or search by name (case-insensitive, partial match)
-**Update** — edit any field of an existing student without retyping the rest
-**Delete** — remove a student record by ID
-**CSV support** — export all records to CSV, or bulk-import students from a CSV file (duplicate rows are skipped, not fatal)
+1) Create — add new student records with validation (no empty names, no duplicate IDs, positive age)
+2) Read — view all students (sorted by ID) or search by name (case-insensitive, partial match)
+3) Update — edit any field of an existing student without retyping the rest
+4) Delete — remove a student record by ID
+5) CSV support — export all records to CSV, or bulk-import students from a CSV file (duplicate rows are skipped, not fatal)
 
 # Project Structure
 
 This project follows separation of concerns — each file has exactly one responsibility
-
-student_management_system/
-├── models.py       # Student data model (dataclass)
-├── exceptions.py   # Custom exceptions (DuplicateStudentError, StudentNotFoundError)
-├── repository.py   # Persistence layer — JSON/CSV read & write only
-├── manager.py       # Business logic — CRUD operations, validation rules
-└── main.py           # CLI entry point — user interaction only
+1) models.py       # Student data model (dataclass)
+2) exceptions.py   # Custom exceptions (DuplicateStudentError, StudentNotFoundError)
+3) repository.py   # Persistence layer — JSON/CSV read & write only
+4) manager.py       # Business logic — CRUD operations, validation rules
+5) main.py           # CLI entry point — user interaction only
 
 # Tech Stack
 
-- Python 3.9+
-- Standard library only — `dataclasses`, `json`, `csv`, `pathlib` (no external dependencies)
+Python 3.9+
+Standard library only — `dataclasses`, `json`, `csv`, `pathlib` (no external dependencies)
 
