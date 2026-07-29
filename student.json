@@ -1,0 +1,18 @@
+[
+    {
+        "student_id": 2,
+        "name": "ffff",
+        "age": "32",
+        "course": "eeeeeeeeee",
+        "email": "wwwwwwwww",
+        "marks": 2.0
+    },
+    {
+        "student_id": 3,
+        "name": "e",
+        "age": 3,
+        "course": "d",
+        "email": "e",
+        "marks": 3.0
+    }
+]
